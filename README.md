@@ -17,7 +17,7 @@ We build a comprehensive two-dimensional, top-down representation of a player’
 
 We quantify this **field of view** through a probabilistic model that utilizes a player's speed and head orientation, modeling human vision where objects in the peripheral vision or at greater distances are more difficult to locate exactly, especially at high speeds.
 
-We further enhance this field of view map by incorporating visual obstructions caused by other players on the field. Within this **occlusion map**, the size of occlusion caused by each player j is influenced by the distance to player i and by the shoulder rotation of player j. If player j is angled sideways from the perspective of player i, they occupy less space in their field of vision compared to when looking directly at their torso.
+We further enhance this field of view map by incorporating visual obstructions caused by other players on the field. Within this **occlusion map**, the size of occlusion caused by each player j is influenced by the distance to player <i>i</i> and by the shoulder rotation of player j. If player j is angled sideways from the perspective of player i, they occupy less space in their field of vision compared to when looking directly at their torso.
 After merging these two maps into **vision maps**, we further combine them with pitch control and pitch value surfaces to analyze a player's exploratory behavior while awaiting passes and how this influences the outcome of subsequent dribbles after receiving these passes.
  
 

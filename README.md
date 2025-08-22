@@ -1,4 +1,4 @@
-<div align="center"><h2> Wide Open Gazes: Quantifying Visual Exploratory Behavior in Soccer with Pose Enhanced Positional Data <h2></div>
+<div align="center"><h2> Wide Open Gazes: Quantifying Visual Exploratory Behavior in Soccer with Pose Enhanced Positional Data </h2></div>
 
 ### Introduction
 Traditional approaches to measuring visual exploratory behavior in soccer rely on counting visual exploratory actions (VEAs) based on rapid head movements. These methods suffer from player position bias (i.e., a focus on central midfielders), annotation challenges, binary measurement constraints, lack the power to measure relevant in-game success, and are incompatible with fundamental soccer analytics models such as pitch control.

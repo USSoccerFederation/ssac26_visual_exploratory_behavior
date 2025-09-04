@@ -12,7 +12,7 @@ We build a comprehensive two-dimensional, top-down representation of a player’
  
 <div align="center">
   <img src="assets/vision.gif" alt="SHAP Value Image" width="600">
-  <p><strong>Figure 1.</strong> The vision map of a player in possession of the ball.</p>
+  <p><strong>Figure 1.</strong> The vision map of Argentina's #7 (Rodrigo De Paul)</p>
 </div>
 
 We quantify this **field of view** through a probabilistic model that utilizes a player's speed and head orientation, modeling human vision where objects in the peripheral vision or at greater distances are more difficult to locate exactly, especially at high speeds.

@@ -11,7 +11,7 @@ This research introduces a novel formulaic continuous stochastic vision layer to
 We build a comprehensive two-dimensional, top-down representation of a player’s visual perception, by creating two complementary models: a **field of view model** to quantify a player’s ability to see other players on the pitch, and an **occlusion model** to describe any player on the pitch that blocks another player’s vision. Combined, these two facets give us a complete **vision map** of a player, as shown in Figure 1.
  
 <div align="center">
-  <img src="assets/vision.png" alt="SHAP Value Image" width="600">
+  <img src="assets/vision.gif" alt="SHAP Value Image" width="600">
   <p><strong>Figure 1.</strong> The vision map of a player in possession of the ball.</p>
 </div>
 

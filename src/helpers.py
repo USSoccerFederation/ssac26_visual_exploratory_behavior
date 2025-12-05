@@ -1,4 +1,9 @@
 import numpy as np
+from scipy.ndimage import zoom
+
+PITCH_LENGTH = 100
+PITCH_WIDTH = 64
+FPS = 25
 
 
 def get_grid(v, dim, grid_dim):
@@ -46,3 +51,20 @@ def shoulder_angle_to_xy(x, y, angle, human_width, smooth_multiplier):
         "right_x": shoulder_right_x,
         "right_y": shoulder_right_y,
     }
+
+
+def reshape_matrix(matrix, new_shape=(68, 105), normed: bool = False):
+    # Calculate the zoom factors for each dimension
+    zoom_factors = (new_shape[0] / matrix.shape[0], new_shape[1] / matrix.shape[1])
+    # Resample the matrix to the new shape
+    reshaped_matrix = zoom(
+        matrix, zoom_factors, order=1
+    )  # order=1 for bilinear interpolation
+    if normed:
+        reshaped_matrix = (reshaped_matrix - np.min(reshaped_matrix)) / (
+            np.max(reshaped_matrix) - np.min(reshaped_matrix)
+        )
+    return reshaped_matrix
+
+
+
